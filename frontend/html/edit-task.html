@@ -1,0 +1,351 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow | Edit Task</title>
+
+    <link rel="stylesheet" href="css/task.css">
+
+</head>
+
+
+<body>
+
+
+
+<!-- ================= NAVBAR ================= -->
+
+
+<header class="navbar">
+
+
+    <div class="logo">
+        <span>Task</span>Flow
+    </div>
+
+
+
+    <nav>
+
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+
+        <a href="profile.html">
+            Profile
+        </a>
+
+
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+
+
+    </nav>
+
+
+</header>
+
+
+
+
+
+
+
+<!-- ================= EDIT TASK ================= -->
+
+
+<main class="task-page">
+
+
+    <section class="task-card-form">
+
+
+        <h1>
+            Edit Task
+        </h1>
+
+
+        <p>
+            Update your task details and save changes.
+        </p>
+
+
+
+
+
+        <!-- Edit Task Form -->
+
+
+        <form id="editTaskForm">
+
+
+
+            <!-- Task ID Hidden -->
+
+            <input 
+            type="hidden"
+            id="taskId">
+
+
+
+
+
+
+            <!-- Title -->
+
+
+            <div class="form-group">
+
+
+                <label for="title">
+                    Task Title
+                </label>
+
+
+
+                <input
+
+                type="text"
+
+                id="title"
+
+                name="title"
+
+                placeholder="Enter task title"
+
+                required>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <!-- Description -->
+
+
+            <div class="form-group">
+
+
+                <label for="description">
+                    Description
+                </label>
+
+
+
+                <textarea
+
+                id="description"
+
+                name="description"
+
+                rows="5"
+
+                placeholder="Update task description">
+
+                </textarea>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Priority and Status -->
+
+
+            <div class="form-row">
+
+
+
+                <div class="form-group">
+
+
+                    <label for="priority">
+                        Priority
+                    </label>
+
+
+
+                    <select 
+                    id="priority"
+                    name="priority">
+
+
+                        <option value="low">
+                            Low
+                        </option>
+
+
+                        <option value="medium">
+                            Medium
+                        </option>
+
+
+                        <option value="high">
+                            High
+                        </option>
+
+
+                    </select>
+
+
+
+                </div>
+
+
+
+
+
+
+
+
+                <div class="form-group">
+
+
+                    <label for="status">
+                        Status
+                    </label>
+
+
+
+                    <select
+
+                    id="status"
+
+                    name="status">
+
+
+                        <option value="pending">
+                            Pending
+                        </option>
+
+
+                        <option value="in-progress">
+                            In Progress
+                        </option>
+
+
+                        <option value="completed">
+                            Completed
+                        </option>
+
+
+                    </select>
+
+
+
+                </div>
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+
+            <!-- Due Date -->
+
+
+            <div class="form-group">
+
+
+                <label for="dueDate">
+                    Due Date
+                </label>
+
+
+
+                <input
+
+                type="date"
+
+                id="dueDate"
+
+                name="dueDate">
+
+
+
+            </div>
+
+
+
+
+
+
+
+
+            <!-- Buttons -->
+
+
+            <div class="form-actions">
+
+
+                <a href="dashboard.html" class="cancel-btn">
+
+                    Cancel
+
+                </a>
+
+
+
+
+
+                <button type="submit" class="save-btn">
+
+                    Update Task
+
+                </button>
+
+
+
+            </div>
+
+
+
+
+        </form>
+
+
+
+
+    </section>
+
+
+
+</main>
+
+
+
+
+
+
+<script src="js/edit-task.js"></script>
+
+
+</body>
+
+</html>

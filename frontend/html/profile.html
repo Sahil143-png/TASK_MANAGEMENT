@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>TaskFlow | Profile</title>
+
+    <link rel="stylesheet" href="css/profile.css">
+
+</head>
+
+
+<body>
+
+
+
+<!-- ================= NAVBAR ================= -->
+
+
+<header class="navbar">
+
+
+    <div class="logo">
+        <span>Task</span>Flow
+    </div>
+
+
+
+    <nav>
+
+
+        <a href="dashboard.html">
+            Dashboard
+        </a>
+
+
+        <a href="profile.html" class="active">
+            Profile
+        </a>
+
+
+
+        <button id="logoutBtn">
+            Logout
+        </button>
+
+
+    </nav>
+
+
+</header>
+
+
+
+
+
+
+
+<!-- ================= PROFILE SECTION ================= -->
+
+
+<main class="profile-container">
+
+
+
+    <section class="profile-card">
+
+
+
+        <!-- Profile Image -->
+
+
+        <div class="profile-image">
+
+
+            <img 
+            src="assets/images/profile.png"
+            alt="User Profile">
+
+
+        </div>
+
+
+
+
+
+        <h1 id="userName">
+            John Doe
+        </h1>
+
+
+
+        <p id="userEmail">
+            johndoe@gmail.com
+        </p>
+
+
+
+
+
+
+        <!-- User Information -->
+
+
+        <div class="profile-details">
+
+
+            <div class="detail-box">
+
+
+                <h3>
+                    Total Tasks
+                </h3>
+
+
+                <p id="totalTasks">
+                    0
+                </p>
+
+
+            </div>
+
+
+
+
+
+            <div class="detail-box">
+
+
+                <h3>
+                    Completed
+                </h3>
+
+
+                <p id="completedTasks">
+                    0
+                </p>
+
+
+            </div>
+
+
+
+
+
+            <div class="detail-box">
+
+
+                <h3>
+                    Joined
+                </h3>
+
+
+                <p id="joinDate">
+                    Jan 2026
+                </p>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+        <!-- Update Profile Form -->
+
+
+        <form id="profileForm">
+
+
+
+            <div class="form-group">
+
+
+                <label for="name">
+                    Full Name
+                </label>
+
+
+                <input
+
+                type="text"
+
+                id="name"
+
+                placeholder="Enter your name">
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="form-group">
+
+
+                <label for="email">
+                    Email
+                </label>
+
+
+
+                <input
+
+                type="email"
+
+                id="email"
+
+                placeholder="Enter your email"
+
+                disabled>
+
+
+            </div>
+
+
+
+
+
+
+
+            <div class="form-group">
+
+
+                <label for="bio">
+                    Bio
+                </label>
+
+
+
+                <textarea
+
+                id="bio"
+
+                rows="4"
+
+                placeholder="Write something about yourself">
+
+                </textarea>
+
+
+
+            </div>
+
+
+
+
+
+
+
+            <button type="submit" class="save-btn">
+
+                Save Changes
+
+            </button>
+
+
+
+
+        </form>
+
+
+
+    </section>
+
+
+
+
+</main>
+
+
+
+
+
+
+
+<script src="js/profile.js"></script>
+
+
+</body>
+
+</html>
